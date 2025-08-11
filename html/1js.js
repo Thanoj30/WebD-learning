@@ -1,6 +1,5 @@
 let age = 31;
 let isStudent = true;
-
 if (age < 30) {
     if (isStudent) {
         console.log("Young student");
