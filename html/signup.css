@@ -27,7 +27,6 @@ body {
   margin-bottom: 25px;
   color: #333;
 }
-
 .signup-container input {
   width: 100%;
   padding: 12px;
@@ -59,5 +58,4 @@ body {
 .signup-container a {
   color: #4CAF50;
   text-decoration: none;
-
 }
