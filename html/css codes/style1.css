@@ -7,7 +7,6 @@ body {
       height: 100vh;
       margin: 0;/
     }
-
     .login-box {
       background-color: white;
       padding: 30px;
@@ -16,12 +15,10 @@ body {
       width: 320px;
       text-align: center;
     }
-
     .login-box h2 {
       margin-bottom: 20px;
       color: #333;
     }
-
     .login-box input {
       width: 100%;
       padding: 12px;
@@ -29,7 +26,6 @@ body {
       border: 1px solid #ccc;
       border-radius: 8px;
     }
-
     .login-box button {
       width: 100%;
       padding: 12px;
@@ -40,21 +36,17 @@ body {
       font-weight: bold;
       cursor: pointer;
     }
-
     .login-box button:hover {
       background-color: #5fc3ce;
     }
-
     .login-box p {
       margin-top: 15px;
       font-size: 14px;
     }
-
     .login-box a {
       color: #74ebd5;
       text-decoration: none;
     }
-
     .login-box a:hover {
       text-decoration: underline;
     } 
