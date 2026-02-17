@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- for selecting multiple options -->
+  <form>
+  <select id="subjects" name="subjects" multiple>
+    <option value="math">Math</option>
+    <option value="science">Science</option>
+    <option value="english">English</option>
+    <option value="history">History</option>
+  </select>
+  <br>
+  <input type="submit">
+</form> 
+  
+<!-- using checkbox -->
+  <form>
+  <label>Choose Subjects:</label><br>
+  <input type="checkbox" name="subjects" value="math"> Math<br>
+  <input type="checkbox" name="subjects" value="science"> Science<br>
+  <input type="checkbox" name="subjects" value="english"> English<br>
+  <input type="checkbox" name="subjects" value="history"> History<br>
+  <br>
+  <input type="submit">
+</form> 
+
+<!-- to select only one choice -->
+<form>
+  <fieldset>
+    <div>
+      
+      <label for="choice1">one</label>
+      <input type="radio" id="choice1" name="single" value="one" />
+      <lable for="choice2">two</lable>
+      <input type="radio" id="choice2" name="single" value="two"/>
+    </div>
+  </fieldset>
+</form>
+<form>
+  Name:
+  <input type="text" name="name" autocomplete="on"><br><br>
+
+  Email:
+  <input type="email" name="email" autocomplete="email"><br><br>
+
+  Password:
+  <input type="password" name="password" autocomplete="current-password"><br><br>
+
+  <input type="submit">
+</form>
+</body>
+</html>

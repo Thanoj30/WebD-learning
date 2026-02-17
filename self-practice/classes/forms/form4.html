@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>complex form</h1>
+    <fieldset>
+        <legend>personal information</legend>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email">
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" name="phone" max="10" inputmode="numeric" >
+        <label for="dob">date of birt:</label>
+        <input type="date" id="dob" name="dob">
+        <label for="gender">gender</label>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male"> 
+        <label for="female">male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="country">country</label>
+        <select name="country" id="country">
+            <option value="india">india</option>
+            <option value="usa">usa</option>
+            <option value="uk">uk</option>
+            <option value="austrelia">austrelia</option>
+        </select> 
+    </fieldset>
+     <br>
+    <fieldset>
+        <legend>
+            <label for="address">address street</label>
+            <input type="address" id="address" name="address">
+            <label for="city">city</label>
+            <input type="text" id="city" name="city">
+            <label for="state">state</label>
+            <input type="text" id="state" name="state">
+            <label for="zip">zip code</label>
+            <input type="text" name="zipcode" pattern="[0-9]{6}" maxlength="6">
+        </legend>
+    </fieldset>
+    <fieldset>
+         <br>
+        <legend>other information</legend>
+        <label for="comments">comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="20"></textarea>
+        <label for="accsepting">i agree to the terms of service</label>
+        <input type="checkbox" name="accsepting" id="accsepting">
+    </fieldset>
+    <br>
+    <input type="submit">
+</body>
+</html>
