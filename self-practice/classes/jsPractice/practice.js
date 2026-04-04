@@ -36,42 +36,63 @@
 // console.log(obj1.height);
 // console.log(obj1.getWeight());
 // obj1.greet();
-function checking1(check1=2,check2=2){
-    console.log(check1);
-    console.log(check2);
-} 
-checking1(); 
-
 // function checking1(check1=2,check2=2){
 //     console.log(check1);
 //     console.log(check2);
 // } 
-// checking1(2,3);
+// checking1(); 
 
-function checking2(check1=2,check2=check1+2){
-    console.log(check1);
-    console.log(check2);
-} 
-checking2(); 
+// // function checking1(check1=2,check2=2){
+// //     console.log(check1);
+// //     console.log(check2);
+// // } 
+// // checking1(2,3);
+
+// function checking2(check1=2,check2=check1+2){
+//     console.log(check1);
+//     console.log(check2);
+// } 
+// checking2(); 
 
 
-function checking3(check={name:"thanoj",age:20}){
-    console.log(check);
-    //console.log(check.age);
+// function checking3(check={name:"thanoj",age:20}){
+//     console.log(check);
+//     //console.log(check.age);
+// }
+// checking3();
+
+
+// function checking4(value=9){
+//     console.log(value);
+// }
+// checking4(undefined);
+
+// function getAge(){
+//     return 20;
+// }
+
+// function utility(name,age=getAge()){
+//     console.log(name," ",age);
+// }
+// utility("thanoj",4);
+
+
+//object cloning 
+//method 1
+let src={name:"thanoj",age:20};
+let dest1={...src};
+console.log(src);
+console.log(dest1);
+
+//method 2
+let dest2=Object.assign({},src);
+console.log(dest2);
+
+//method 3
+let dest3={};
+for(let key in src){
+   let newKey=key;
+   let newValue=src[key];
+   dest3[newKey]=newValue;
 }
-checking3();
-
-
-function checking4(value=9){
-    console.log(value);
-}
-checking4(undefined);
-
-function getAge(){
-    return 20;
-}
-
-function utility(name,age=getAge()){
-    console.log(name," ",age);
-}
-utility("thanoj",4);
+console.log(dest3);
