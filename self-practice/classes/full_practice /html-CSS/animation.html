@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: blanchedalmond;
+            border:3px solid black;
+            height: 80vh;
+            width: 50vw;
+        }
+        .box1, .box2{
+            border:0px;
+            background-color: rgb(56, 5, 150);
+            width:200px;
+            height: 30px;
+            border-radius: 10px;
+            position: relative;
+            margin:5px;
+        }
+        .box1{
+            animation-name:top;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-duration: 5s;
+        }
+        @keyframes top{
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:520px;
+            }
+        }
+        .box2{
+            animation:5s linear 0s infinite alternate none running left;
+        }
+        @keyframes left{
+            from{
+                top:620px;
+                left:520px;
+            }
+            to{
+                top:620px;
+                left:0;
+            }
+        }
+        #circle{
+            position: relative;
+            border: 0;
+            background-color: black;
+            height: 30px;
+            width: 30px;
+            border-radius: 50px;
+            animation: 10s ease-in-out 0s infinite alternate none running circle;
+        }
+        @keyframes circle {
+            0%{
+                top:0%;
+                left:2%;
+            }
+            30%{
+                top:2%;
+                left:90%;
+            }
+            60%{
+                top:80%;
+                left:5%;
+            }
+            100%{
+                top:80%;
+                left:90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div id="circle">
+
+        </div>
+    </div>
+</body>
+</html>

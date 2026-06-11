@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        :root{
+            --primary-color:black;
+        }
+        .container{
+            height: 1050px;
+            width:1050px;
+            background-color: beige;
+            border:3px solid var(--primary-color);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .box{
+            height: 350px;
+            width:350px;
+            background-color: lightskyblue;
+            border:2px solid darkblue;
+            padding:3px;
+            /* box-shadow:4px 4px darkgreen; */
+            /* box-shadow:-4px 4px darkgreen;*/
+            /* box-shadow:4px 4px 5px darkgreen; */
+            /* box-shadow:inset 4px 4px 5px darkgreen; */
+            /* box-shadow:4px 4px 5px 5px darkgreen; */
+            box-shadow:4px 4px 2px 1px rgb(238, 66, 66),4px 4px 2px 5px darkgreen;
+        }
+        #h1{
+             text-shadow: 2px 2px 1px white;
+            /*text-shadow: white 2px 2px 1px ;
+            text-shadow: white 2px 2px ; */
+            /* text-shadow: 2px 2px 1px ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="small.jpg" alt="image" height="100px" width="100px">
+        <h1 id="h1">Welcome to Tt world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo fugit culpa inventore ipsam deserunt id hic mollitia nihil commodi illum facilis, laborum libero dicta sed molestias reiciendis. Doloremque, culpa quam.</p>
+    </div>
+    </div>
+</body>
+</html>

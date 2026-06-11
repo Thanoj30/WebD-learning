@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            border: 5px solid black;
+            background-color: antiquewhite;
+        }
+        .left{
+            width:50%;
+            border:3px;
+            background-color: lightseagreen;
+            margin:2px;
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            border: 2px solid black;
+            background-color: rgb(233, 141, 141);
+            margin:2px;
+        }
+        .right{
+            width:50%;
+            border:3px;
+            background-color:rgb(119, 119, 173);
+            margin:2px;
+            padding: 4px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        @media(max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+<p>hello1</p>
+<p>hello2</p>
+        </div>
+        <div class="right">
+<img src="marvel.jpg" alt="marvel image">
+        </div>
+    </div>
+</body>
+</html>
